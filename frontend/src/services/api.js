@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:3000";
+const API = "https://attendance-system-cso9.onrender.com";
 
 export const login = (data) =>
   axios.post(`${API}/login`, data);
@@ -16,7 +16,7 @@ export const addUser = (data, token) =>
   });
 
   export const enrollFinger = (id, token) =>
-  axios.post("http://localhost:3000/enroll",
+  axios.post("https://attendance-system-cso9.onrender.com/enroll",
     { id },
     { headers: { Authorization: token } }
   );
